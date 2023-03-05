@@ -9,7 +9,7 @@ def load ():
         return pickle.load(fid)
 
 age = st.slider('Укажите ваш возраст', 15, 80, key = 'age')
-gender = st.slider('Укажите ваш пол', 1, 2, key = 'gender')
+gender = st.selectbox('Укажите ваш пол', [1, 2], key = 'gender')
 st.write('1 – мужчина, 2 – женщина')
 height = st.slider('Укажите ваш рост', 50, 250, key = 'height')
 weight = st.slider('Укажите вес', 30, 300, key = 'weight')
